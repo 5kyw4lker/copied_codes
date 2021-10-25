@@ -1,0 +1,124 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #2b2b2b;
+}
+
+.navbarVerschiebung{
+    height: 100px;
+}
+
+
+
+
+
+
+
+label{
+    position: relative;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+label input{
+    appearance: none;
+    display: none;
+}
+
+label span{
+    position: relative;
+    display: block;
+    /* Groesse Schalterfassung */
+    width: 220px;
+    height: 110px;
+    background: #626262;
+    border-radius: 110px;
+    box-shadow: inset 0 2px 15px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 -1px 1px rgba(0,0,0,0.2);
+}
+
+label .indicator{
+    position: absolute;
+    /* Schalterposition Hoehe */
+    top: 20px;
+    /* Linke Endposition Schalter */ 
+    left: 5px;
+    /* Groesse Schalter */
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5),
+                inset 0 1px 1px rgba(255,255,255,0.1);
+    transition: 0.5s;
+}
+
+label input:checked ~ .indicator{
+    /* Rechte Endposition Schalter */ 
+    left: 115px;
+}
+
+label .indicator::before{
+    content: '';
+    position: absolute;
+    /* LED-Position */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* LED-Groesse */
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    border-radius: 50%;
+    transition: 0.5s;
+    box-shadow: 0 0 2px #f00,
+                0 0 5px #f00,
+                0 0 10px #f00,
+                0 0 15px #f00,
+                0 0 20px #f00,
+                0 0 25px #f00,
+                0 0 30px #f00,
+                0 0 35px #f00,
+                0 0 40px #f00;
+}
+
+label input:checked ~ .indicator::before{
+    background: #0f0;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #0f0,
+                0 0 5px #0f0,
+                0 0 10px #0f0,
+                0 0 15px #0f0,
+                0 0 20px #0f0,
+                0 0 25px #0f0,
+                0 0 30px #0f0,
+                0 0 35px #0f0,
+                0 0 40px #0f0;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

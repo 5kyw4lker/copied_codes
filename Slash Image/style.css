@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(bg.jpg);
+    background-size: 1300px;
+    background-position: center;
+
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(splash.jpg);
+    /* Splash-Groesse */
+    background-size: 2300px;
+    background-position: center;
+    mix-blend-mode: screen;
+}

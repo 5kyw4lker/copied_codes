@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+
+img{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(236, 202, 202, 0.25);
+    -moz-box-shadow: 3px 3px 6px rgba(236, 202, 202, 0.25);
+    -webkit-box-shadow: 3px 3px 6px rgba(236, 202, 202, 0.25);
+    -khtml-box-shadow: 3px 3px 6px rgba(236, 202, 202, 0.25);
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+ul{
+    position: relative;
+    display: flex;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li a .fa{
+    color: #222
+}
+
+ul li::before{
+    font-family: fontAwesome;
+    position: absolute;
+    /* top: -6px; */                  /* für Desktop */
+    /* top: 0px; */             /* für Android */
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+ul li:nth-child(1)::before{
+    content: '\f099';
+    color: #1da1f2;
+    border-bottom: 4px solid #1da1f2;
+}
+
+ul li:nth-child(2)::before{
+    content: '\f232';
+    color: #25d366;
+    border-bottom: 4px solid#25d366;
+}
+
+ul li:nth-child(3)::before{
+    content: '\f16a';
+    color: #ff0000;
+    border-bottom: 4px solid #ff0000;
+}
+
+ul li:hover::before{
+    /* Slidinglänge nach unten */
+    height: 110%;
+}
+
+
+
+@media (max-width: 575px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 6rem;
+    }
+    ul li::before{
+        top: 0px; 
+        /* Groesse farbiges Icon */
+        font-size: 6rem;
+    }    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 7rem;
+    }
+    ul li::before{
+        top: -10px; 
+        /* Groesse farbiges Icon */
+        font-size: 7rem;
+    }    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 8rem;
+    }
+    ul li::before{
+        top: -10px; 
+        /* Groesse farbiges Icon */
+        font-size: 8rem;
+    }    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 9rem;
+    }
+    ul li::before{
+        top: 0px; 
+        /* Groesse farbiges Icon */
+        font-size: 9rem;
+    }    
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1360px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 10rem;
+    }
+    ul li::before{
+        top: -13px; 
+        /* Groesse farbiges Icon */
+        font-size: 10rem;
+    }    
+}
+
+@media only screen and (min-width: 1361px) and (max-width: 1500px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 13rem;
+    }
+    ul li::before{
+        top: 0px; 
+        /* Groesse farbiges Icon */
+        font-size: 13rem;
+    }    
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1600px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 15rem;
+    }
+    ul li::before{
+        top: 0px; 
+        /* Groesse farbiges Icon */
+        font-size: 15rem;
+    }    
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 2400px) {
+    ul li a .fa{
+        /* Groesse graues Icon */
+        font-size: 17rem;
+    }
+    ul li::before{
+        top: 0px; 
+        /* Groesse farbiges Icon */
+        font-size: 17rem;
+    }    
+}
+
+
+/* 
+
+
+
+
+
+
+@media only screen and (min-width: 1801px) and (max-width: 2400px) */
+
+
+
+
+
+
+
+
+
